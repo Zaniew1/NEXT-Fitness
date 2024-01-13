@@ -1,10 +1,11 @@
-import Image from 'next/image'
-import styles from './page.module.css'
-
+import { Footer } from './components/Footer/Footer'
+import styles from './styles/_main.module.sass'
+import { Navigation } from './components/Nav/Navigation'
 export default function Home() {
   return (
     <main className={styles.main}>
- 
+      <Navigation/>
+      <Footer/>        
     </main>
   )
 }
