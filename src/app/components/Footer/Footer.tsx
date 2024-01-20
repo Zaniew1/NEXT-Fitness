@@ -1,12 +1,12 @@
 import styles from '../../styles/_footer.module.sass'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone, faHouse, faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import { Header } from '../Header/Header'
+import { Logo } from '../Logo/Logo'
 import { Socials } from '../Socials/Socials'
 export const Footer = ():JSX.Element => {
     return (
         <footer className={styles.footer}>
-            <Header/>
+            <Logo/>
             <Socials/>
             <div className={styles.footer__wrapper}>
                 <h3 className={styles.footer__contact}>Kontakt</h3>

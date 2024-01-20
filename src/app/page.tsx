@@ -1,10 +1,10 @@
 import { Footer } from './components/Footer/Footer'
 import styles from './styles/_main.module.sass'
-import { Navigation } from './components/Nav/Navigation'
+import { Header } from './components/Header/Header'
 export default function Home() {
   return (
     <main className={styles.main}>
-      <Navigation/>
+      <Header/>
       <Footer/>        
     </main>
   )
