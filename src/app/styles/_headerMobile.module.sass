@@ -1,3 +1,4 @@
+@import 'mediaQuery.module.scss'
 .header__mobile 
     display: flex
     justify-content: space-between
@@ -9,4 +10,7 @@
     background-color: #fff
     padding: 10px 0 
     z-index: 20
-
+    @include md 
+        display: none
+    &__logo
+        z-index: 20

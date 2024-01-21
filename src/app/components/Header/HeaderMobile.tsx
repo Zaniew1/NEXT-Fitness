@@ -5,7 +5,7 @@ import { NavMobile } from "../Nav/NavMobile"
 import { Burger } from "../Nav/Burger"
 import { useState } from "react"
 export const HeaderMobile = ():JSX.Element => {
-    const [dropNav, setDropNav] = useState<boolean>(true)
+    const [dropNav, setDropNav] = useState<boolean>(false)
     const clickDropHandler = () => {setDropNav(!dropNav)}
     return (
         <header className={styles.header__mobile}>
