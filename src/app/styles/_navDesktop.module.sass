@@ -1,0 +1,28 @@
+@import 'variables.module.sass'
+
+.desktop
+    display: flex
+    z-index: 10
+    transition: .3s ease-in-out
+    color: #fff
+    border-top: 1px solid #fff
+    margin-top: 10px
+    // transition: 0.3s ease-in-out
+    &__list
+        display: flex
+        justify-content: end
+        flex-direction: row
+        align-items: center
+        list-style-type: none
+        width: 100%
+        margin-top: 10px
+        &__item
+            cursor: pointer
+            margin-left: 10px
+            font-size: 10px
+    &__scrolled
+        color: #000
+        margin: 0
+    &__scrolled &__list
+        justify-content: center
+        margin-top: 0

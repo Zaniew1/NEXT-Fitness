@@ -1,0 +1,31 @@
+@import 'variables.module.sass'
+@import 'mediaQuery.module.scss'
+.header__desktop
+    display: none
+    position: fixed
+    top: 0
+    left:0
+    align-items: center
+    width: 100%
+    background-color: transparent
+    z-index: 20
+    padding: 10px 20px
+    transition: 0.2s ease-in
+    @include md 
+        display: flex
+    &__nav
+        display: flex
+        flex-direction: column
+        width: 80%
+        margin-right: 30px
+        &__logo
+            display: flex
+            justify-content: flex-start
+            align-items: flex-start
+    &__scrolled
+        background-color: #fff
+    &__scrolled &__nav
+        justify-content: space-between
+        align-items: center
+        flex-direction: row
+
