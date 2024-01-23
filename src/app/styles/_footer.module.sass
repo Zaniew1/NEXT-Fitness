@@ -1,35 +1,81 @@
 @import 'variables.module.sass'
+@import 'mediaQuery.module.scss'
 .footer
     display: flex
     justify-content: center
     align-items: center
     flex-direction: column
-    margin-top: 50vh 
     background-color: $third-color
     color: $secondary-color
     width: 100%
-    .footer__wrapper
-        width: 100%
+    @include md 
+        flex-direction: column
+
+    &__wrapper
         display: flex
         flex-direction: column
-        justify-content: center
-        align-items: left
-        .footer__contact
+        width: 100%
+        @include md 
+            flex-direction: row
+        @include lg 
+            width: 70%
+            margin: auto
+        .footer__logo
             display: flex
+            width: 100%
+            flex-direction: column
+            @include md 
+                width: 35%
+                
+        .footer__contact
+            width: 100%
+            display: flex
+            flex-direction: column
             justify-content: center
-            margin-bottom: 15px
-        .footer__info
-            font-weight: bold
-            margin: 10px 0 5px 30px 
-            .footer__icons
-                width: 18px
-                padding-right: 5px
+            align-items: left
+            margin: 15px 0
+            @include md 
+                width: 40%
+            &__header
+                display: flex
+                justify-content: center
+                margin-bottom: 15px
+                @include md 
+                    font-size: 20px
+                    justify-content: flex-start
+            &__info
+                font-weight: bold
+                margin: 10px 0 5px 30px 
+                @include md 
+                    font-size: 12px
+                    margin: 10px 0 5px 0
+                &__icons
+                    width: 18px
+                    padding-right: 5px
+        .footer__nav
+            display: none
+            justify-content: flex-start
+            align-content: flex-start
+            @include md 
+                display: flex
+            &__list
+                font-size: 12px
+                margin: 15px 0
+                width: 100%
+                list-style-type: none
+                &__item
+                    margin:  0 0 10px 0
+                    transition: .3s ease-in-out
+                    width: 100%
+                    &:hover
+                        cursor: pointer
+                        transform: scale(1.1)
+    .footer__term
+        &__link
+            font-size: 12px
+            margin: 15px
+            margin-bottom: 30px
 
-    .footer__terms
-        font-size: 14px
-        margin: 15px
-        margin-bottom: 30px
-
-    .footer__copy
-        font-size: 12px
-        margin-bottom: 40px
+        &__copy
+            font-size: 12px
+            margin-bottom: 40px

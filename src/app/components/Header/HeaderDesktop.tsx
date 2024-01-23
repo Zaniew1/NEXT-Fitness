@@ -6,8 +6,6 @@ import { CustomButton } from "../UI/Buttons/CustomButton";
 import {useScrollChecker} from "../../customHooks/scrollChecker";
 export const HeaderDesktop = ():JSX.Element => {
     const pageY = useScrollChecker();
-    console.log(pageY)
-
     return (
         <header className={`${styles.header__desktop} ${pageY > 0 ? styles.header__desktop__scrolled : ""}`}>
             <div className={styles.header__desktop__nav}>
