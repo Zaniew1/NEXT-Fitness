@@ -3,12 +3,14 @@ import { Header } from './components/Header/Header'
 import { Welcome } from './components/Welcome/Welcome'
 import { Footer } from './components/Footer/Footer'
 import { About } from './components/About/About'
+import { Trainings } from './components/Trainings/Trainings'
 export default function Home() {
   return (
     <main className={styles.main}>
       <Header/>
       <Welcome/>
       <About/>
+      <Trainings/>
       <Footer/>        
     </main>
   )
