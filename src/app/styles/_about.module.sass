@@ -1,3 +1,5 @@
+@import 'mediaQuery.module.scss'
+@import 'variables.module.sass'
 .about
     display: flex
     justify-content: center
@@ -6,15 +8,51 @@
     width: 100%
     background-color: #f2f0ec
     color: #000
+    padding-top: 30px
+    @include md 
+        padding: $mainPadding
+        flex-direction: row
+        padding: 80px 0 
     &__image
-        width: 100%
+        margin: 40px 0
+        width: 80%
+        aspect-ratio: 1/1
+        position: relative
+        @include md 
+            width: 50%
+            margin: 40px 20px
+            padding: $mainPadding
+            flex-direction: row
+        @include lg 
+            width: 35%
+            margin: 40px 60px
+        @include xl 
+            width: 20%
     &__text
-        width: 40%
-        padding: 50px 0
+        width: 80%
+        padding: 30px 0
+        text-align: center
+        @include lg 
+            width: 50%
+            margin: 40px 60px
         &__header
             font-size: 20px
             margin: 20px 15px 20px 0
+            @include md
+                font-size: 28px
+            @include lg 
+                font-size: 30px
+            
+              
         &__paragraph
-            font-size: 16px
+            font-size: 14px
             margin: 20px 0 20px 0
-        
+            width: 100%
+            @include md
+                padding: 0 50px
+                letter-spacing: 1px
+                text-align: justify
+                font-size: 14px
+            @include lg 
+                padding: 0
+                font-size: 16px

@@ -4,7 +4,7 @@ export const NavDesktop:React.FC<{scrolled:boolean}> = (props):JSX.Element => {
         <nav className={`${styles.desktop} ${ props.scrolled ? styles.desktop__scrolled: ""}`}>
              <ul className={styles.desktop__list}>
                 <li className={styles.desktop__list__item}>Strona Główna</li>
-                <li className={styles.desktop__list__item}>O mnie</li>
+                <li className={styles.desktop__list__item}>Usługi</li>
                 <li className={styles.desktop__list__item}>Pakiety</li>
                 <li className={styles.desktop__list__item}>Opinie</li>
                 <li className={styles.desktop__list__item}>Kontakt</li>
