@@ -10,49 +10,59 @@
     color: #000
     padding-top: 30px
     @include md 
+        flex-wrap: wrap
         padding: $mainPadding
         flex-direction: row
-        padding: 80px 0 
+        padding: 30px 0 
+    &__header
+        width: 100%
     &__image
         margin: 40px 0
         width: 80%
         aspect-ratio: 1/1
         position: relative
+        left: 0
+        top: 0
+        max-width: 350px
+        -webkit-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1)
+        -moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1)
+        box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1)
         @include md 
-            width: 50%
+            aspect-ratio: 1/2
+            width: 20%
             margin: 40px 20px
-            padding: $mainPadding
+            padding: 0
             flex-direction: row
         @include lg 
-            width: 35%
+            width: 22%
             margin: 40px 60px
         @include xl 
-            width: 20%
+            width: 15%
     &__text
         width: 80%
         padding: 30px 0
-        text-align: center
-        @include lg 
+        @include md 
             width: 50%
-            margin: 40px 60px
+            margin: 40px 20px
+            padding: 0 30px
+        @include xl 
+            width: 35%
         &__header
-            font-size: 20px
+            text-align: left
+            font-size: 16px
             margin: 20px 15px 20px 0
             @include md
-                font-size: 28px
+                font-size: 20px
             @include lg 
-                font-size: 30px
-            
-              
+                font-size: 22px
         &__paragraph
+            text-align: left
             font-size: 14px
             margin: 20px 0 20px 0
             width: 100%
             @include md
-                padding: 0 50px
                 letter-spacing: 1px
                 text-align: justify
-                font-size: 14px
+                font-size: 10px
             @include lg 
-                padding: 0
-                font-size: 16px
+                font-size: 12px

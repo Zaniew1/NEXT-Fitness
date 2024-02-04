@@ -1,13 +1,21 @@
 import styles from "../../styles/_navDesktop.module.sass"
+import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
 export const NavDesktop:React.FC<{scrolled:boolean}> = (props):JSX.Element => {
     return (
         <nav className={`${styles.desktop} ${ props.scrolled ? styles.desktop__scrolled: ""}`}>
              <ul className={styles.desktop__list}>
-                <li className={styles.desktop__list__item}>Strona Główna</li>
-                <li className={styles.desktop__list__item}>Usługi</li>
-                <li className={styles.desktop__list__item}>Pakiety</li>
-                <li className={styles.desktop__list__item}>Opinie</li>
-                <li className={styles.desktop__list__item}>Kontakt</li>
+                <Link href={'/'} className={styles.desktop__list__item}>Strona Główna</Link>
+                <div className={styles.desktop__list__item__services}><FontAwesomeIcon className={styles.desktop__list__item__services__icon} icon={faCaretDown} /> Usługi
+                    <div className={styles.desktop__list__item__services__wrapper}>
+                        <Link href={'/personal'} className={styles.desktop__list__item__services__wrapper__item}> - Trening Personalny</Link>
+                        <Link href={'/diet'} className={styles.desktop__list__item__services__wrapper__item}> - Opieka Dietetyczna</Link>
+                    </div>
+                </div>
+                <Link href={'/'} className={styles.desktop__list__item}>Pakiety</Link>
+                <Link href={'/'} className={styles.desktop__list__item}>Opinie</Link>
+                <Link href={'/'} className={styles.desktop__list__item}>Kontakt</Link>
             </ul>
         </nav>
     )

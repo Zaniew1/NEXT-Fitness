@@ -5,13 +5,15 @@ import { CustomParagraph } from '../UI/Texts/CustomParagraph';
 export const About:React.FC =():JSX.Element => {
     return(
         <section className={classes.about}>
-          <CustomHeader text={"O mnie"}/>
+          <div className={classes.about__header}>
+            <CustomHeader  text={"O mnie"}/>
+          </div>
               <div className={classes.about__image}>
-                    <CustomImage src={'/klaudia.png'} alt={'asd'} priority={false} quality={60}/>
+                    <CustomImage src={'/klaudia.png'} alt={'Obraz przedstawiający Klaudię Schmidt'} priority={false} quality={90}/>
               </div>
               <div className={classes.about__text}>
-                <CustomHeader customClass={classes.about__text__header} text={"Cześć!  Jestem Klaudia"}/>
-                <CustomParagraph customClass={classes.about__text__paragraph} text={"Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sitsit amet consectetur adipisicing Lorem ipsum dolor sitsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sunt nemo placeat, recusandae aliquid ea, aspernatur provident ullam maiores vel voluptate facilis iusto natus dolores laudantium minima? Mollitia, libero quaerat."}/>
+                <h3 className={classes.about__text__header}>Cześć!  Jestem Klaudia</h3>
+                <CustomParagraph customClass={classes.about__text__paragraph} text={"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam, maxime neque.isi aliquid, labore ratione, temporibus nam consequuntur repellendus repellat voluptas obcaecati illo iste at! o maxime asperiores reiciendis obcaecati, ab esse unde tempora et sint mollitia voluptate rem modi aperiam labore eius accusamus dolore at voluptatum cumque reprehenderit debitis qui ut fuga architecto? Quam."}/>
               </div>
         </section>
     )

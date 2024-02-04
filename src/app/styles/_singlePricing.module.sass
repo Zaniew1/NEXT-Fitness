@@ -1,9 +1,21 @@
+@import 'mediaQuery.module.scss'
+@import 'variables.module.sass'
+
 .single__pricing
     width: 100%
     border: 1px solid #000
     border-radius: 10px
     padding: 25px
     margin: 40px 0
+    @include md
+        flex-grow: 1
+        width: 40%
+        margin: 40px 20px
+    @include lg
+        width: 25%
+    @include xl
+        max-width: 350px
+        width: 20%
     &__header
         margin: 10px 0
         text-align: center
@@ -15,7 +27,9 @@
         font-size: 30px
         font-weight: bold
     &__list
-        margin: 30px 40px
+        margin: 30px 30px
+        @include lg
+            margin: 30px 20px
         &__item
             padding: 10px
     &__button
