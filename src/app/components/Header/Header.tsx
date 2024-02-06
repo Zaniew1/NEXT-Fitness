@@ -4,7 +4,7 @@ export const Header = ():JSX.Element => {
     return (
         <>
             <HeaderMobile/>
-            <HeaderDesktop/>
+            <HeaderDesktop color={'white'}/>
         </>
     )
 } 

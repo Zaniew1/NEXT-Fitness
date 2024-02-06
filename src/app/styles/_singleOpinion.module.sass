@@ -1,0 +1,33 @@
+@import 'mediaQuery.module.scss'
+@import 'variables.module.sass'
+
+.single__opinion
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    margin: 10px
+    &__header
+        margin: 10px auto
+    &__wrapper
+        display: flex
+        justify-content: center
+        align-items: center
+        &__stars
+            color: gold
+    &__paragraph
+        text-align: justify
+        margin: 10px
+        font-size: 12px
+        word-break: break-word
+        overflow: hidden
+        text-overflow: ellipsis
+        display: -webkit-box
+        -webkit-line-clamp: 20
+        -webkit-box-orient: vertical
+        @include md
+            font-size: 13px
+        @include lg
+            font-size: 12px
+        @include xl
+            font-size: 11px

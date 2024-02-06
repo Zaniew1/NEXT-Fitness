@@ -4,7 +4,7 @@ import { Logo } from "../Logo/Logo";
 import { NavDesktop } from "../Nav/NavDekstop";
 import { CustomButton } from "../UI/Buttons/CustomButton";
 import {useScrollChecker} from "../../customHooks/scrollChecker";
-export const HeaderDesktop = ():JSX.Element => {
+export const HeaderDesktop:React.FC<{color:"white" | "black"}> = ():JSX.Element => {
     const pageY = useScrollChecker();
     return (
         <header className={`${styles.header__desktop} ${pageY > 0 ? styles.header__desktop__scrolled : ""}`}>

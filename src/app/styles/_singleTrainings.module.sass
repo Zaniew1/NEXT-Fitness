@@ -1,8 +1,16 @@
+@import 'mediaQuery.module.scss'
 .single__training
     display: flex
     flex-direction: column
     justify-content: center
     align-content: center
+    width: 100%
+    margin: 20px 0
+    @include md
+        min-height: 550px
+        width: 40%
+    @include lg
+        width: 30%
     &__button
         justify-content: center
         align-content: center
@@ -12,3 +20,6 @@
         width: 100%
         aspect-ratio: 16/9
         position: relative
+    &__paragraph
+        padding: 5px 0
+        

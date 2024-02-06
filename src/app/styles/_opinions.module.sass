@@ -1,2 +1,49 @@
+@import 'mediaQuery.module.scss'
+@import 'variables.module.sass'
 .opinions
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
     min-height: 60vh
+    width: 100%
+    margin: 40px 0 
+    &__slider
+        display: flex
+        justify-content: center
+        width: 90%
+        height: 500px
+        &__overlapper
+            width: 90%
+            height: 100%
+            @include md
+                width: 80%
+            @include lg
+                width: 80%
+            @include xl
+                width: 60%
+            &__slick
+                position: relative
+                margin: 10px 5px
+                &__arrow
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    position: absolute
+                    top: 50%
+                    transform: translate(-50%, -50%)
+                    z-index: 30
+                    font-size: 26px
+                    width: 60px
+                    height: 60px
+                    cursor: pointer
+                    &__right
+                        left: 105%
+                    &__left
+                        left: -5%
+                &__element
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    height: 400px
+                    background-color: #ccc
