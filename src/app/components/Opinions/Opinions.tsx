@@ -7,8 +7,7 @@ import { OpinionSlider } from "./OpinionSlider";
 export const Opinions:React.FC = () :JSX.Element => {
 
     return (
-        <section className={classes.opinions}>
-            <CustomHeader text={"Opinie"}/>
+        <section id="opinions" className={classes.opinions}>
             <div className={classes.opinions__slider}>
                 <div className={classes.opinions__slider__overlapper}>
                     <OpinionSlider/>

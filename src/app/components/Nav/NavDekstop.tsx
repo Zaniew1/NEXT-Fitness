@@ -13,9 +13,9 @@ export const NavDesktop:React.FC<{scrolled:boolean}> = (props):JSX.Element => {
                         <Link href={'/diet'} className={styles.desktop__list__item__services__wrapper__item}> - Opieka Dietetyczna</Link>
                     </div>
                 </div>
-                <Link href={'/'} className={styles.desktop__list__item}>Pakiety</Link>
-                <Link href={'/'} className={styles.desktop__list__item}>Opinie</Link>
-                <Link href={'/'} className={styles.desktop__list__item}>Kontakt</Link>
+                <Link href={'/#pricing'} scroll={true} className={styles.desktop__list__item}>Pakiety</Link>
+                <Link href={'/#opinions'} scroll={true} className={styles.desktop__list__item}>Opinie</Link>
+                <Link href={'/contact'} className={styles.desktop__list__item}>Kontakt</Link>
             </ul>
         </nav>
     )

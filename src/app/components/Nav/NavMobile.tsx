@@ -12,9 +12,9 @@ export const NavMobile:React.FC<{drop:boolean}> = (props):JSX.Element => {
                     <Link href={'/personal'} className={styles.mobile__list__item__services__item}> - Trening Personalny</Link>
                     <Link href={'/diet'} className={styles.mobile__list__item__services__item}> - Opieka Dietetyczna</Link>
                 </div>
-                <Link href={'/'} className={styles.mobile__list__item}>Pakiety</Link>
-                <Link href={'/'} className={styles.mobile__list__item}>Opinie</Link>
-                <Link href={'/'} className={styles.mobile__list__item}>Kontakt</Link>
+                <Link href={'#pricing'} scroll={true} className={styles.mobile__list__item}>Pakiety</Link>
+                <Link href={'#opinions'} scroll={true} className={styles.mobile__list__item}>Opinie</Link>
+                <Link href={'/contact'} className={styles.mobile__list__item}>Kontakt</Link>
             </ul>
             <div className={styles.mobile__tel}>
                 <CustomButton text={"Zadzwoń do mnie!"} path={"tel:+48503954333"} color={"black"} icon={"tel"}/>

@@ -2,10 +2,11 @@ import styles from './styles/_main.module.sass'
 import { Header } from './components/Header/Header'
 import { Welcome } from './components/Welcome/Welcome'
 import { About } from './components/About/About'
-import { Contact } from './components/Contact/Contact'
 import { Opinions } from './components/Opinions/Opinions'
 import { Footer } from './components/Footer/Footer'
 import { Pricing } from './components/Pricing/Pricing'
+import { Telephone } from './components/UI/Buttons/Telephone'
+import { Gallery } from './components/Gallery/Gallery'
 export default function Home() {
   return (
     <main className={styles.main}>
@@ -14,8 +15,9 @@ export default function Home() {
       <About/>
       <Pricing/>
       <Opinions/>
-      <Contact/>
+      <Gallery/>
       <Footer/>        
+      <Telephone/>
     </main>
   )
 }
