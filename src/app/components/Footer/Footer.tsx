@@ -2,6 +2,7 @@ import styles from '../../styles/_footer.module.sass'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone, faHouse, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { Logo } from '../Logo/Logo'
+import Link from 'next/link'
 import { Socials } from '../Socials/Socials'
 export const Footer = ():JSX.Element => {
     return (
@@ -20,11 +21,13 @@ export const Footer = ():JSX.Element => {
                 </div>
                 <div className={styles.footer__nav}>
                     <ul className={styles.footer__nav__list}>
-                        <li className={styles.footer__nav__list__item}>Strona Główna</li>
-                        <li className={styles.footer__nav__list__item}>O mnie</li>
-                        <li className={styles.footer__nav__list__item}>Pakiety</li>
-                        <li className={styles.footer__nav__list__item}>Opinie</li>
-                        <li className={styles.footer__nav__list__item}>Kontakt</li>
+                        <Link href={'/'} className={styles.footer__nav__list__item}>Strona Główna</Link>
+                        <Link href={'#personal'} className={styles.footer__nav__list__item}>Trening Personalny</Link>
+                        <Link href={'#diet'} className={styles.footer__nav__list__item}>Dieta</Link>
+                        <Link href={'#about'} className={styles.footer__nav__list__item}>O mnie</Link>
+                        <Link href={'#pricing'} className={styles.footer__nav__list__item}>Pakiety</Link>
+                        <Link href={'/#opinions'} className={styles.footer__nav__list__item}>Opinie</Link>
+                        <Link href={'/contact'} className={styles.footer__nav__list__item}>Kontakt</Link>
                     </ul>
                 </div>
             </div>
