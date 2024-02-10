@@ -4,7 +4,7 @@ import {dataPricing} from './DataPricing'
 import { CustomHeader } from "../UI/Texts/CustomHeader"
 export const Pricing:React.FC = ():JSX.Element => {
     return (
-        <section className={classes.pricing}>
+        <section id="pricing" className={classes.pricing}>
             <CustomHeader text={"Pakiety"}/>
             <div className={classes.pricing__wrapper}>
                 {dataPricing.map( element =>  {
