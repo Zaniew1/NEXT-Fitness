@@ -1,3 +1,5 @@
+@import 'mediaQuery.module.scss'
+@import 'variables.module.sass'
 .image
     display: flex
     justify-content: center
@@ -6,6 +8,8 @@
     width: 80%
     margin: 0 auto
     aspect-ratio: 1.4/2
+    @include xl
+        aspect-ratio: 1.4/1.6
 .text
     position: relative
     color: #000
