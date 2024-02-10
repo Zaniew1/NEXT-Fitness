@@ -7,19 +7,47 @@
     width: 100%
     margin: 20px 0
     @include md
-        min-height: 550px
-        width: 40%
+        flex-direction: row
+        width: 100%
     @include lg
-        width: 30%
-    &__button
-        justify-content: center
-        align-content: center
-        align-items: center
-        margin: 0 auto 30px auto
+        flex-grow:1
+        width: 40%
+        max-width: 550px
     &__img
         width: 100%
         aspect-ratio: 16/9
         position: relative
-    &__paragraph
-        padding: 5px 0
-        
+        @include md
+            width: 50%
+            heigt: 300px
+        @include lg
+            width: 200px
+            height: 200px
+    &__text
+        @include md 
+            width: 50%
+            margin-left: 25px
+        @include lg
+            display: flex
+            flex-direction: column
+            align-items: center
+        &__header
+            margin: 15px 0
+            width: 100%
+            @include lg
+            font-size: 12px
+
+        &__button
+            justify-content: center
+            align-items: center
+            margin: 0 auto 30px auto
+            @include lg
+                transform: scale(0.8)
+
+        &__paragraph
+            width: 100%
+            padding: 5px 0
+            @include md
+            @include lg
+                font-size: 11px
+            

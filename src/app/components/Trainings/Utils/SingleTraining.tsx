@@ -9,9 +9,10 @@ export const SingleTraining:React.FC<{img:string, alt:string, header: string, pa
                 <div className={classes.single__training__img}>
                     <CustomImage src={props.img} alt={props.alt} sizes={''} priority={false} quality={50} />
                 </div>
-                <CustomHeader text={props.header}/>
-                <CustomParagraph text={props.paragraph} customClass={classes.single__training__paragraph}/>
-                <CustomButton customClass={classes.single__training__button} text={'Szczegóły'} color={'black'} path={''}/>
+                <div className={classes.single__training__text}>
+                    <h3 className={classes.single__training__text__header} >{props.header}</h3>
+                    <p className={classes.single__training__text__paragraph}>{props.paragraph}</p>
+                </div>
         </div>
     )
 }

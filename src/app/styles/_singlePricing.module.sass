@@ -2,37 +2,55 @@
 @import 'variables.module.sass'
 
 .single__pricing
-    width: 100%
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    width: 90%
     border: 1px solid #000
     border-radius: 10px
     padding: 25px
-    margin: 40px 0
+    margin: 40px auto
     @include md
         flex-grow: 1
         width: 40%
-        margin: 40px 20px
+        margin: 10px 10px
+        padding: 15px
     @include lg
         width: 25%
     @include xl
         max-width: 350px
         width: 20%
-    &__header
-        margin: 10px 0
-        text-align: center
-    &__subheader
-        margin-bottom: 20px
-        text-align: center
-    &__price
-        text-align: center
-        font-size: 30px
-        font-weight: bold
-    &__list
-        margin: 30px 30px
-        @include lg
-            margin: 30px 20px
-        &__item
-            padding: 10px
+    &__wrapper
+        display: flex
+        flex-direction: column
+
+        &__header
+            margin: 10px 0
+            text-align: center
+            @include md
+                font-size: 14px
+        &__subheader
+            margin-bottom: 20px
+            text-align: center
+            @include md
+                font-size: 12px
+        &__price
+            text-align: center
+            font-size: 30px
+            font-weight: bold
+            @include md
+                font-size: 22px
+        &__list
+            margin: 30px 30px
+            @include lg
+                margin: 30px 20px
+            &__item
+                padding: 10px
+                @include md
+                    font-size: 12px
     &__button
         display: flex
         justify-content: center
         margin-top: 60px
+        @include md
+            margin-top: auto
