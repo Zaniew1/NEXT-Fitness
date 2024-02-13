@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     
-    <html lang="pl">
+    <html className='scroll-smooth' style={{scrollBehavior:'smooth'}} lang="pl">
       <UIContextProvider>
       <body className={inter.className}>{children}</body>
       </UIContextProvider>

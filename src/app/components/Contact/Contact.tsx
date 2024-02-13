@@ -1,3 +1,5 @@
+"use client"
+import { motion } from 'framer-motion';
 import classes from '../../styles/_contact.module.sass'
 import { ContactText } from './ContactText';
 import { ContactSocials } from './ContactSocials';
@@ -9,7 +11,7 @@ export const Contact: React.FC = (): JSX.Element =>{
     return (
         <div className={classes.contact__section}>
             <div className={classes.contact}>
-            <h3 className={classes.contact__header}>Kontakt</h3>
+            <motion.h3 viewport={{ once: true }} initial={{y: -100, opacity: 0}} whileInView={{y:0, opacity: 1}}  className={classes.contact__header}>Kontakt</motion.h3>
             <ContactText/>
             <ContactSocials/>
             <ContactForm/>

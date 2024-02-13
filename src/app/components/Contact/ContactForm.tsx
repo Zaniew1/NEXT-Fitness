@@ -1,4 +1,5 @@
 "use client"
+import { motion } from 'framer-motion';
 import classes from '../../styles/_contactForm.module.sass'
 import { MutableRefObject } from "react"
 import {useRef} from 'react';
@@ -18,7 +19,7 @@ export const ContactForm = ():JSX.Element => {
     }
 
     return (
-            <form className={classes.form__wrapper} onSubmit={formSubmitionHandler}>
+            <motion.form viewport={{ once: true }} initial={{y: 250, opacity: 0}} whileInView={{y:0, opacity: 1}} className={classes.form__wrapper} onSubmit={formSubmitionHandler}>
                 <div className={classes.form__control}>
                     <label className={classes.form__label} htmlFor='name'> Twoje Imię</label>
                     <input className={classes.form__input} ref={nameInputRef} type='text' id='name' required/>
@@ -38,6 +39,6 @@ export const ContactForm = ():JSX.Element => {
                 <div className={classes.form__action}>
                     <button className={classes.form__button} type='submit'>Napisz do mnie</button>
                 </div>  
-            </form>
+            </motion.form>
     );
 }

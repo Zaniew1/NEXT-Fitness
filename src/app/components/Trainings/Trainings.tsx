@@ -8,9 +8,7 @@ import { SingleTrainingGoal } from './Utils/SingleTrainingGoal';
 import { SingleTrainingSuited } from './Utils/SingleTrainingSuited';
 export const Trainings:React.FC =():JSX.Element => {
     const [firstTrainings, setFirstTraingins] = useState<boolean>(true);
-    const changeTrainings = () => {
-        setFirstTraingins(!firstTrainings);
-    }
+
     return(
         <section className={classes.train}>
             <div className={classes.trainings}>
@@ -18,8 +16,8 @@ export const Trainings:React.FC =():JSX.Element => {
                 <TrainingsAbout/>
                 <TrainingsDoings/>
                 <div className={classes.trainings__buttons}>
-                    <button onClick={changeTrainings} className={classes.trainings__buttons__button}>Dopasowany do Ciebie</button>
-                    <button onClick={changeTrainings} className={classes.trainings__buttons__button}>Nastawiony na twój cel</button>
+                    <button onClick={()=>setFirstTraingins(false)} className={`${classes.trainings__buttons__button} ${!firstTrainings ?? classes.trainings__buttons__button__active}`}>Dopasowany do Ciebie</button>
+                    <button onClick={()=>setFirstTraingins(true)} className={`${classes.trainings__buttons__button} ${firstTrainings ?? classes.trainings__buttons__button__active}`}>Nastawiony na twój cel</button>
                 </div>
                 <SingleTrainingGoal visibility={firstTrainings}/>
                 <SingleTrainingSuited visibility={firstTrainings}/>

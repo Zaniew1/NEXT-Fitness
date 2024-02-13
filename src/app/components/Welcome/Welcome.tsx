@@ -14,7 +14,7 @@ export const Welcome:React.FC = ():JSX.Element => {
                 {/* <p className={styles.welcome__wrapper__name}>{}</p> */}
                 <p className={styles.welcome__wrapper__header}><Typewriter text={header} delay={50} /></p>
                 <p className={styles.welcome__wrapper__text}><Typewriter text={paragraph} delay={15} /></p>
-                <CustomButton text={"Pakiety"} path={'/offer'} color={"white"}/>
+                <CustomButton text={"Pakiety"} path={'#pricing'} color={"white"}/>
             </div>
             <CustomImage src={'/plecy.jpg'} alt={'Plecy jakiejś Pani'} priority={true} quality={100} sizes={"100vw"} customClass={styles.welcome__image}/>
         </section>
