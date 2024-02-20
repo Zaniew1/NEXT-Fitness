@@ -10,10 +10,10 @@ export const About:React.FC =():JSX.Element => {
         <section className={classes.about}>
           <div className={classes.about__header}>
           </div>
-              <motion.div viewport={{ once: true }} initial={{opacity: 0, x:-200, y: 300 }} whileInView={{ opacity:100, x: 0, y: 0}}  className={classes.about__image}>
+              <motion.div viewport={{ once: true }} initial={{opacity: 0, y: 300 }} whileInView={{ opacity:100,  y: 0}}  className={classes.about__image}>
                     <CustomImage src={'/klaudia.jpg'} alt={'Obraz przedstawiający Klaudię Schmidt'} priority={false} quality={90}/>
               </motion.div>
-              <motion.div viewport={{ once: true }} transition={{delay:0.6}}  initial={{opacity: 0, x:200}} whileInView={{ opacity:100, x:0}} className={classes.about__text}>
+              <motion.div viewport={{ once: true }} transition={{delay:0.6}}  initial={{opacity: 0, y:200}} whileInView={{ opacity:100, y:0}} className={classes.about__text}>
                 <h3 className={classes.about__text__header}>Cześć! Jestem Klaudia</h3>
                 <CustomParagraph customClass={classes.about__text__paragraph} text={"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam, maxime neque.isi aliquid, labore ratione, temporibus nam consequuntur repellendus repellat voluptas obcaecati illo iste at! o maxime asperiores reiciendis obcaecati, ab esse unde tempora et sint mollitia voluptate rem modi aperiam labore eius accusamus dolore at voluptatum cumque reprehenderit debitis qui ut fuga architecto? Quam."}/>
               </motion.div>
