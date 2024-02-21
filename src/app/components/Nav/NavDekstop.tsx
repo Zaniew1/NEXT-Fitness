@@ -10,6 +10,7 @@ export const NavDesktop:React.FC<{scrolled:boolean}> = (props):JSX.Element => {
                 <div className={styles.desktop__list__item__services}><FontAwesomeIcon className={styles.desktop__list__item__services__icon} icon={faCaretDown} /> Usługi
                     <div className={styles.desktop__list__item__services__wrapper}>
                         <Link href={'/personal'} className={styles.desktop__list__item__services__wrapper__item}> - Trening Personalny</Link>
+                        <Link href={'/plan'} className={styles.desktop__list__item__services__wrapper__item}> - Plan Treningowy</Link>
                         <Link href={'/diet'} className={styles.desktop__list__item__services__wrapper__item}> - Opieka Dietetyczna</Link>
                     </div>
                 </div>

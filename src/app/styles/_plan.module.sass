@@ -1,0 +1,79 @@
+@import 'mediaQuery.module.scss'
+@import 'variables.module.sass'
+.plan
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    width: 100%
+    background-color: #000
+    padding-top: 150px
+    opacity: 0.9
+    &__intro
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        color: #fff
+        max-width: 1000px 
+        margin: 0 auto
+        @include md 
+            flex-direction: row
+        &__text
+
+            @include md 
+                width: 55%
+                 
+            &__header
+                text-align: center
+                margin: 20px 0 
+                font-size: 26px
+                @include md
+                    font-size: 36px
+                    padding: 0 25px
+                    text-align: left
+            &__paragraph
+                text-align: center
+                padding: 20px 15px
+                line-height: 1.8
+                font-size: 12px
+                @include md
+                    padding: 20px 25px
+                    text-align: left
+                @include lg 
+                    font-size: 14px
+        &__img
+            position: relative
+            width: 90%
+            margin: 30px auto
+            aspect-ratio: 2/1.4
+            @include md
+                margin: 0 30px
+                width: 45%
+    &__info
+        display: flex
+        justify-content: center
+        align-items: flex-start
+        flex-direction: column
+        color: #fff
+        margin: 40px 10px 60px 10px
+        max-width: 1000px 
+        @include lg
+             margin: 0 auto
+        &__header
+            text-align: center
+            margin: 20px 0 
+            padding-left: 40px
+            font-size: 26px
+            @include md
+                font-size: 24px
+                padding: 0 25px
+                text-align: left
+            @include lg
+                font-size: 22px
+        &__list
+            padding: 10px 10px 10px 40px
+            &__item
+                padding: 10px 0
+                @include lg 
+                    font-size: 12px
