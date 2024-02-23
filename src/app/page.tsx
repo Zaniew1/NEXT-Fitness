@@ -7,11 +7,13 @@ import { Footer } from './components/Footer/Footer'
 import { Pricing } from './components/Pricing/Pricing'
 import { Telephone } from './components/UI/Buttons/Telephone'
 import { Gallery } from './components/Gallery/Gallery'
+import { Offert } from './components/Offert/Offert'
 export default function Home() {
   return (
     <main className={styles.main}>
       <Header/>
       <Welcome/>
+      <Offert/>
       <About/>
       <Pricing/>
       <Opinions/>

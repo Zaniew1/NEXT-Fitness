@@ -8,8 +8,8 @@ import { CustomParagraph } from '../UI/Texts/CustomParagraph';
 export const About:React.FC =():JSX.Element => {
     return(
         <section className={classes.about}>
-          <div className={classes.about__header}>
-          </div>
+          <CustomHeader text={"O mnie"}/>
+          
               <motion.div viewport={{ once: true }} initial={{opacity: 0, y: 300 }} whileInView={{ opacity:100,  y: 0}}  className={classes.about__image}>
                     <CustomImage src={'/klaudia.jpg'} alt={'Obraz przedstawiający Klaudię Schmidt'} priority={false} quality={90}/>
               </motion.div>
