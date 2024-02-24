@@ -1,29 +1,42 @@
 export const dataGallery: {
-  img: string;
-  stage: string;
+  before: string;
+  after: string;
+  name: string;
+  description: string;
 }[] = [
   {
-    stage: "Przed",
-    img: "/plecy.jpg",
+    before: "/plecy.jpg",
+    after: "/diet.jpg",
+    name: "Imię nazwisko",
+    description:
+      "Lorem Ipsum dolor met  Ipsum dolor met Ipsum dolor met Ipsum dolor met Ipsum dolor met Ipsum dolor met",
   },
   {
-    stage: "Po",
-    img: "/plecy.jpg",
+    before: "/plecy.jpg",
+    after: "/diet.jpg",
+    name: "Imię nazwisko",
+    description:
+      "Lorem Ipsum dolor met  Ipsum dolor met Ipsum dolor met Ipsum dolor met Ipsum dolor met Ipsum dolor met",
   },
   {
-    stage: "Przed",
-    img: "/plecy.jpg",
+    before: "/plecy.jpg",
+    after: "/diet.jpg",
+    name: "Imię nazwisko",
+    description:
+      "Lorem Ipsum dolor met  Ipsum dolor met Ipsum dolor met Ipsum dolor met Ipsum dolor met Ipsum dolor met",
   },
   {
-    stage: "Po",
-    img: "/plecy.jpg",
+    before: "/plecy.jpg",
+    after: "/diet.jpg",
+    name: "Imię nazwisko",
+    description:
+      "Lorem Ipsum dolor met  Ipsum dolor met Ipsum dolor met Ipsum dolor met Ipsum dolor met Ipsum dolor met",
   },
   {
-    stage: "Przed",
-    img: "/plecy.jpg",
-  },
-  {
-    stage: "Po",
-    img: "/plecy.jpg",
+    before: "/plecy.jpg",
+    after: "/diet.jpg",
+    name: "Imię nazwisko",
+    description:
+      "Lorem Ipsum dolor met  Ipsum dolor met Ipsum dolor met Ipsum dolor met Ipsum dolor met Ipsum dolor met",
   },
 ];

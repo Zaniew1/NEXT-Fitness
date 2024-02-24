@@ -50,7 +50,7 @@ return(
         className={classes.opinions__slider__overlapper__slick}  {...settings}
     >
         {dataGallery.map(el => {
-            return <SinglePicture stage={el.stage} key={el.img+Math.random()}  img={el.img} />
+            return <SinglePicture name={el.name} description={el.description} before={el.before} key={el.before+Math.random()}  after={el.after} />
         }
          )}
     </Slider>

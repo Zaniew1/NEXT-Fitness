@@ -1,22 +1,45 @@
 @import 'mediaQuery.module.scss'
 @import 'variables.module.sass'
-.image
-    display: flex
-    justify-content: center
-    align-items: center
-    position: relative
+
+.transformation
     width: 80%
     margin: 0 auto
-    aspect-ratio: 1.4/2
-    @include xl
-        aspect-ratio: 1.4/1.6
-.text
-    position: relative
-    color: #000
-    font-size: 24px
-    top: -10%
-    left: 50%
-    font-weight: 600
-    text-align: center
-    margin: 15px 0
-    transform: translate(-50%, 0)
+    aspect-ratio: 1/1.7
+    overflow: hidden
+
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    &__image
+        top: 0
+        height: 60%
+        &__before
+            width: 100%
+            height: 100%
+            top: 0
+            opacity: 1
+            position: relative
+            transition: 0.3s ease-in-out
+        &__after
+            top: 0
+            transition: 0.3s ease-in-out
+            position: relative
+            opacity: 1
+            height: 100%
+            width: 100%
+        &__transform
+            position: relative
+            z-index: 10
+            top: 10%
+            text-align: center
+            color: #fff
+    &__text
+        padding-top: 30px
+        height: 40%
+        border-radius: 0 0 15px 15px
+        border: 1px solid #000
+        &__name
+            margin-top: 10px
+            padding: 10px
+        &__description
+            padding: 10px 10px 30px 10px
