@@ -21,16 +21,16 @@ const previous = () => {
 const settings={
     infinite: true,
     speed: 500,
-    slidesToShow: 2,
-    slidesToScroll: 2,
+    slidesToShow:4,
+    slidesToScroll: 4,
     nextArrow: <NextArrow onClick={next} />,
     prevArrow: <PrevArrow onClick={previous} />,
     responsive: [
         {
         breakpoint: 1024,
         settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
+            slidesToShow: 4,
+            slidesToScroll: 4,
         }
         },
         {
