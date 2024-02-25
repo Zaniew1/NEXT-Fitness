@@ -15,8 +15,8 @@ export const Footer = ():JSX.Element => {
                 </div>
                 <div className={styles.footer__contact}>
                     <h3 className={styles.footer__contact__header}>Kontakt</h3>
-                    <div className={styles.footer__contact__info}><FontAwesomeIcon className={styles.footer__contact__info__icons} icon={faPhone} />+48 501 909 984</div>
-                    <div className={styles.footer__contact__info}><FontAwesomeIcon className={styles.footer__contact__info__icons} icon={faEnvelope} /> klaudiaSchmidt@gmail.com</div>
+                    <div className={styles.footer__contact__info}><FontAwesomeIcon className={styles.footer__contact__info__icons} icon={faPhone} />+48 726 045 084</div>
+                    <div className={styles.footer__contact__info}><FontAwesomeIcon className={styles.footer__contact__info__icons} icon={faEnvelope} />schmidt.klaudia1210@gmail.com</div>
                     <div className={styles.footer__contact__info}><FontAwesomeIcon className={styles.footer__contact__info__icons} icon={faHouse} />ALTUS Uniwersytecka 13 Katowice</div>
                 </div>
                 <div className={styles.footer__nav}>

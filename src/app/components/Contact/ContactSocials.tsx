@@ -10,19 +10,19 @@ export const ContactSocials: React.FC = (): JSX.Element =>{
         <motion.div initial={{y: 250, x:100, opacity: 0}} whileInView={{y:0,x:0, opacity: 1}} className={classes.contact__socials} >
             <div className={classes.contact__socials__wrapper}>
                 <FontAwesomeIcon icon={faPhone} />
-                <a href=""  className={classes.contact__socials__wrapper__link}>+48 123 123 123</a>
+                <a href="tel:+48726045084"  className={classes.contact__socials__wrapper__link}>+48 726 045 084</a>
             </div>
             <div className={classes.contact__socials__wrapper}>
                 <FontAwesomeIcon icon={faEnvelope} />
-                <a href="" className={classes.contact__socials__wrapper__link}>Gmail@www.pl</a>
+                <a href="mailto:schmidt.klaudia1210@gmail.com" className={classes.contact__socials__wrapper__link}>schmidt.klaudia1210@gmail.com</a>
             </div>
             <div className={classes.contact__socials__wrapper}>
                 <FontAwesomeIcon icon={faSquareFacebook} />
-                <a href="" className={classes.contact__socials__wrapper__link} >facebook</a>
+                <a href="https://www.facebook.com/trenerkakatowice" className={classes.contact__socials__wrapper__link} >Klaudia Schmidt - Trener personalny</a>
             </div>
             <div className={classes.contact__socials__wrapper}>
                 <FontAwesomeIcon icon={faInstagram} />
-                <a href="" className={classes.contact__socials__wrapper__link}>+48 123 123 123</a>
+                <a href="https://www.instagram.com/klaudia.sch/" className={classes.contact__socials__wrapper__link}>klaudia.sch</a>
             </div>
         </motion.div>
     )

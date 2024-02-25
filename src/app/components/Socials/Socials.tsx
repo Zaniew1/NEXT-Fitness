@@ -5,8 +5,8 @@ export const Socials:React.FC<{customStyle?:{}}> = (props):JSX.Element =>{
 
     return (
         <ul className={styles.socials} style={props.customStyle}>
-            <li className={styles.socials__icons}> <FontAwesomeIcon icon={faSquareFacebook} /></li>
-            <li className={styles.socials__icons}> <FontAwesomeIcon icon={faInstagram} /></li>
+           <li className={styles.socials__icons}> <a href="https://www.facebook.com/trenerkakatowice"> <FontAwesomeIcon icon={faSquareFacebook} /></a></li>
+            <li className={styles.socials__icons}><a href="https://www.instagram.com/klaudia.sch/"> <FontAwesomeIcon icon={faInstagram} /></a></li>
         </ul>
     )
 }

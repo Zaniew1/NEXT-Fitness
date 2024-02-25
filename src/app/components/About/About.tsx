@@ -11,14 +11,11 @@ export const About:React.FC =():JSX.Element => {
           </motion.div>
           <motion.div viewport={{ once: true }} transition={{delay:0.2}}  initial={{opacity: 0, y:200}} whileInView={{ opacity:100, y:0}} className={classes.about__text}>
             <h3 className={classes.about__text__section}>O mnie</h3>          
-            <h4 className={classes.about__text__header}>Cześć! Jestem Klaudia</h4>
-            <p className={classes.about__text__paragraph}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam, maxime neque.isi aliquid,
-              labore ratione, temporibus nam consequuntur repellendus repellat voluptas obcaecati illo iste at! o maxime asperiores reiciendis obcaecati, 
-              ut fuga architecto? Quam.
+            <h4 className={classes.about__text__header}>Cześć, nazywam się Klaudia Schmidt</h4>
+            <p className={classes.about__text__paragraph}>Jako doświadczona trenerka personalna oraz była zawodniczka sportów sylwetkowych od wielu lat motywuje i pomagam podopiecznym w osiąganiu ich celów zdrowotnych i sylwetkowych. Posiadam wiedzę z zakresu treningu siłowego, funkcjonalnego, medycznego oraz treningu kobiet w ciąży i po ciąży. 
+
             </p>
-            <p className={classes.about__text__paragraph}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam, maxime neque.isi aliquid,
-              labore ratione, temporibus nam consequuntur repellendus repellat voluptas obcaecati illo iste at! o maxime asperiores reiciendis obcaecati, 
-              ut fuga architecto? Quam.
+            <p className={classes.about__text__paragraph}>W swojej pracy wykorzystuje szereg wyspecjalizowanych metod treningowych, które w połączeniu z odpowiednim żywieniem i współpraca, mają przynieść założone efekty. 
             </p>
           </motion.div>
 

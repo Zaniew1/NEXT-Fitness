@@ -4,8 +4,9 @@ import { Typewriter } from "@/app/customHooks/Typewriter";
 import { CustomButton } from "../UI/Buttons/CustomButton"
 import { CustomImage } from "../UI/Image/CustomImage"
 export const Welcome:React.FC = ():JSX.Element => {
-    const header = "Trenuj ze mną";
-    const paragraph = "Niezależnie od tego na jakim etapie życia się teraz znajdujesz, RUCH może Ci bardzo pomóc. Nigdy nie jest za późno!";
+    const header = "Tu zaczyna sie Twoja zmiana";
+    const paragraph1 = "“Zdobądź siłę, sprawność i zdrowie”";
+    const paragraph2 = "Umów się na konsultacje i zacznij trenować z profesjonalistka";
     
 
     return(
@@ -13,8 +14,9 @@ export const Welcome:React.FC = ():JSX.Element => {
             <div className={styles.welcome__wrapper}>
                 {/* <p className={styles.welcome__wrapper__name}>{}</p> */}
                 <p className={styles.welcome__wrapper__header}><Typewriter text={header} delay={50} /></p>
-                <p className={styles.welcome__wrapper__text}><Typewriter text={paragraph} delay={15} /></p>
-                <CustomButton text={"Pakiety"} path={'#pricing'} color={"white"}/>
+                <p className={styles.welcome__wrapper__text}><Typewriter text={paragraph1} delay={20} /></p>
+                <p className={styles.welcome__wrapper__text}><Typewriter text={paragraph2} delay={15} /></p>
+                <CustomButton text={"Kontakt"} path={'/contact'} color={"white"}/>
             </div>
             <CustomImage src={'/plecy.jpg'} alt={'Plecy jakiejś Pani'} priority={true} quality={100} sizes={"100vw"} customClass={styles.welcome__image}/>
         </section>
